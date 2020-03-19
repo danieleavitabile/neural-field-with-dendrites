@@ -1,0 +1,13 @@
+
+*.swp
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex*
+*.thm
+Manuscript/manuscript.pdf
+Manuscript/manuscript.synctex.gz

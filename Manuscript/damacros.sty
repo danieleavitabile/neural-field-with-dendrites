@@ -1,0 +1,54 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{damacros}[2019/09/08 DA's auxiliary macros]
+
+\RequirePackage{amsfonts,amsopn}
+\RequirePackage{todonotes}
+
+% DA's todos, define your own macros and colors
+\newcommand{\da}[2][noinline]{\todo[#1, color=blue!20!white]{\small \texttt{DA}: #2}}
+
+% % Other people's todos, examples
+\newcommand{\ea}[2][noinline]{\todo[#1, color=green!20!white]{\small \texttt{EA}: #2}}
+\newcommand{\fa}[2][noinline]{\todo[#1, color=red!20!white]{\small \texttt{FB}: #2}}
+\newcommand{\ga}[2][noinline]{\todo[#1, color=yellow!20!white]{\small \texttt{GC}: #2}}
+% 
+
+% Operators (as in LaTeX Operators)
+\DeclareMathOperator{\spec}{Spec}
+\DeclareMathOperator{\range}{Range}
+\DeclareMathOperator{\spn}{Span}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\meas}{meas}
+\DeclareMathOperator{\id}{Id}
+\DeclareMathOperator{\real}{Re}
+\DeclareMathOperator{\imag}{Im}
+
+% Notable constants (I do not often use the ones for e and i
+\newcommand{\eps}{\varepsilon}
+\DeclareMathOperator{\e}{e}
+\DeclareMathOperator{\iunit}{i}
+
+% Additional theorem-like environments
+\newsiamthm{hypothesis}{Hypothesis}
+\newsiamthm{claim}{Claim}
+
+% Sets
+\newcommand{\RSet}{\mathbb{R}}
+\newcommand{\CSet}{\mathbb{C}}
+\newcommand{\XSet}{\mathbb{X}}
+\newcommand{\XnSet}{\mathbb{X}_n}
+\newcommand{\FSet}{\mathbb{F}}
+\newcommand{\NSet}{\mathbb{N}}
+\newcommand{\ZSet}{\mathbb{Z}}
+\newcommand{\SSet}{\mathbb{S}}
+\newcommand{\sph}{\mathbb{S}^2}
+
+% Useful for empty 
+\newcommand\blank{{\mkern 2mu\cdot\mkern 2mu}}
+
+% If one really must use calligraphic...
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calL}{\mathcal{L}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calS}{\mathcal{S}}
+
