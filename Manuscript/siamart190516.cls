@@ -1350,9 +1350,9 @@ Vol.\ #3, No.\ #4, pp.\ #5
 %% >>tgk>> --- Added Summer 2015 ---
 %%
 % This needs to be loaded *before* cleveref
-\RequirePackage{algorithm}[0.1]
-\renewcommand{\ALG@name}{Algorithm}
-\renewcommand\thealgorithm{\siamprelabel\@arabic\c@algorithm}
+% \RequirePackage{algorithm}[0.1]
+% \renewcommand{\ALG@name}{Algorithm}
+% \renewcommand\thealgorithm{\siamprelabel\@arabic\c@algorithm}
 %%
 %% <<tgk<<
 %%
@@ -1633,10 +1633,10 @@ Vol.\ #3, No.\ #4, pp.\ #5
 \numberwithin{figure}{section}
 \fi
 
-\if@onealgnum
-\else
-\numberwithin{algorithm}{section}
-\fi
+% \if@onealgnum
+% \else
+% \numberwithin{algorithm}{section}
+% \fi
 
 \if@onethmnum
 \else
