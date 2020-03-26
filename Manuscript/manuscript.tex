@@ -160,8 +160,8 @@ contribution that single dendritic trees make to generating extracellular electr
 field potentials has been known for some time, and can be calculated using
 Maxwell's equations \cite{Pettersen08}, they are often not accounted for in neural
 field models.  However, with the advent of laminar electrodes to record from
-different cortical layers it is now timely to build on early work by Bressloff,
-reviewed in \cite{Bressloff97}, and develop neural field models that incorporate a
+different cortical layers it is now timely to build on early work by Crook and
+coworkers \cite{crook1997role} and by Bressloff, reviewed in \cite{Bressloff97}, and develop neural field models that incorporate a
 notion of dendritic depth.  This will allow a significant and important departure
 from present-day neural field models, and recognise the contribution of dendritic
 processing to macroscopic large-scale brain signals. A simple way to generalise
@@ -1188,10 +1188,15 @@ the only homogeneous steady state.  Linearising around $V=0$ and using
 (\ref{eq:kernel}) gives an evolution equation for the perturbations $\delta
 V(x,\xi,t)$ that can be written in the form
 \begin{equation}
-\delta V(x,\xi,t) = S'(0) \int_{-\infty}^t G(\xi-\xi_0,t-s) \int_{\Rb} 
-w(|x-x'|) \delta V(x',0,s) \diff x' \diff s.
+\delta V(x,\xi,t) = S'(0) \int_{-\infty}^t \Theta(\xi-\xi_0,t-s) \int_{\Rb} 
+w(|x-x'|) \delta V(x',0,s) \diff x' \diff s,
 \label{deltaV}
 \end{equation}
+where
+\[
+  \Theta(\xi, t)=\mathrm{e}^{-\gamma t} \frac{\mathrm{e}^{-\xi^{2} /(4 \nu
+  t)}}{\sqrt{4 \pi \nu t}} H(t).
+\]
 Focusing on a \textit{somatic} field $\delta V(x,0,t)$, we see from (\ref{deltaV})
 (with $\xi=0$) that this has solutions of the form $\e^{\lambda t} \e^{i p x}$ for
 $\lambda \in \Cb$ and $p \in \Rb$, where $\lambda=\lambda(p)$ is defined by the
