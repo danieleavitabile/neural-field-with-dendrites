@@ -24,7 +24,7 @@
     2004 route des Lucioles-Boîte Postale 93 06902,
     Sophia Antipolis, Cedex, France.
   \protect\\
-    (\email{d.avitabile@vu.nl}, \url{writemywebpage}).
+    (\email{d.avitabile@vu.nl}, \url{www.danieleavitabile.com}).
   }
   \and
   Stephen Coombes \thanks{Centre for Mathematical Medicine and Biology, School of
@@ -628,8 +628,8 @@ sufficiently regular solution to \eqref{eq:systemNum}.
      & |V^n - V_*^n|_\infty \leq \frac{T}{1+ \gamma \tau} (C_\tau \tau + C_h h^2)
 	  & \text{if $\zeta = \gamma$} \label{eq:bound2}, \\
      & |V^n - V_*^n|_\infty \leq 
-     \frac{1}{\zeta - \gamma} \exp \frac{(\zeta - \gamma) T}{1+\gamma \tau}
-	   (C_\tau \tau + C_h h^2)
+     \frac{C_\tau \tau + C_h h^2}{\zeta - \gamma} \exp 
+     \frac{(\zeta - \gamma) T}{1+\gamma \tau}
           & \text{if $\zeta > \gamma$} \label{eq:bound3}.
   \end{align}
 \end{lemma}
@@ -728,10 +728,9 @@ sufficiently regular solution to \eqref{eq:systemNum}.
   which combined with \eqref{eq:intermediateBound2} gives \eqref{eq:bound3}:
   \[
     E^n \leq \frac{\omega}{\zeta - \gamma} \exp \frac{(\zeta - \gamma) T}{1+\gamma \tau}
-     = \frac{1}{\zeta - \gamma} \exp \frac{(\zeta - \gamma) T}{1+\gamma \tau}
-	   (C_\tau \tau + C_h h^2).
+     = \frac{C_\tau \tau + C_h h^2}{\zeta - \gamma} \exp \frac{(\zeta - \gamma)
+     T}{1+\gamma \tau}.
   \]
-  
 \end{proof}
 
 The preceding lemma shows that the IMEX scheme has first order convergence in time,
