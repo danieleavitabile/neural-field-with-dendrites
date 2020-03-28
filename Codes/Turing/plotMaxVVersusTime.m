@@ -14,8 +14,6 @@ for k = 1:nFiles
   vMaxVals(k) = max(abs(V(id0P,:)));
 
 end
-% ttVals = linspace(min(tVals),max(tVals),10000);
-% vvMaxVals = interp1(tVals,vMaxVals,ttVals);
 plot(tVals,vMaxVals,'-');
 
 hold on;

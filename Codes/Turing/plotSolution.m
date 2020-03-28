@@ -36,4 +36,4 @@ xlabel('$x$');
 ylabel('$\xi$');
 set(gca,'visible','off');
 
-saveas(gcf,'patterns_mu_28.png')
+% saveas(gcf,'patterns_mu_28.png')

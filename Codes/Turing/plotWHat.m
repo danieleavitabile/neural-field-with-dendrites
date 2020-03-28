@@ -25,7 +25,6 @@ figure; plot(x,wFun(x));
 
 figure, hold on;
 plot(p,wHatAn(p)-wcrit);
-% yline(wcrit);
 
 mu = 30;
 SFun      = @(v) 1./(1+exp(-mu*v))-0.5; 
